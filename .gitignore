@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 #BA222
-.csv
-.xlsx
+*.csv
+*.xlsx
