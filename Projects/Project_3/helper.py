@@ -85,7 +85,7 @@ def corr_iterator(df: pd.DataFrame, target='y', force_clean=False) -> pd.DataFra
 
     results = pd.DataFrame(columns=['corr_req', 'rsquared'])
 
-    corr = rsquared_abs_corr(df)
+    corr = rsquared_abs_corr(df.copy())
 
     for req in corr['abs_corr']:
         cols = corr[corr['abs_corr'] >= req].index.to_numpy()
