@@ -82,7 +82,7 @@ def run_test(path, target: str = "y", n_cols: int = 5):
 if __name__ == '__main__':
     csv_path = pathlib.Path.cwd() / 'Projects' / 'Project_3' / 'bankdata_training.csv'
 
-    bcomb, bstart, bmax = run_test(csv_path, 'y', 6)
+    bcomb, bstart, bmax = run_test(csv_path, 'y', 5)
 
     print(f'Best combination: {bcomb}')
     print(f'Best starting column: {bstart}')
